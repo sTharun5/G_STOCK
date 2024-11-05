@@ -1,0 +1,120 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto; /* Prevent scrolling */
+}
+
+.login-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1e2a38 ; /* Dark blue background */
+    position: fixed; /* Ensure it stays fixed in place */
+    top: 0;
+    left: 0;
+}
+/* #1e2a38 */
+.login-form-container {
+    background-color: #2c3e50; /* Darker blue for the form container */
+    border-radius: 10px;
+    padding: 40px 50px;
+    width: 400px; /* Adjust width for better spacing */
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.college-logo {
+    max-width: 200px; /* Increased size */
+    margin-bottom: 20px;
+}
+
+.login-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+    
+}
+
+.login-header h1 {
+    font-size: 26px;
+    color: #ffffff;
+    margin: 0; /* Remove unnecessary margin */
+    letter-spacing: 2px;
+    display: flex;
+    justify-content: center; /* Center the text within the h1 */
+}
+
+
+.login-tagline {
+    font-size: 14px;
+    color: #bdc3c7; /* Light gray for tagline */
+    margin-bottom: 15px; /* Add space between the tagline and "Login Account" */
+}
+
+.login-title {
+    margin-bottom: 30px; /* Space between "Login Account" and button */
+    font-weight: bold;
+    font-size: 18px;
+    color: #ffffff; /* White text */
+}
+
+.google-button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px; /* Increase space above the button */
+    color: #ffffff;
+    background-color: #4285F4;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.google-button:hover {
+    background-color: #357ae8;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.login-divider {
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #bdc3c7;
+    position: relative;
+    margin: 20px 0;
+}
+
+.login-divider::before {
+    content: 'or';
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #2c3e50;
+    padding: 0 10px;
+    color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+    .login-form-container {
+        width: 80%;
+        padding: 30px 20px;
+    }
+
+    .college-logo {
+        max-width: 150px;
+    }
+
+    .login-header h1 {
+        font-size: 22px;
+    }
+}

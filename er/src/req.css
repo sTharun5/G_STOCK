@@ -1,0 +1,153 @@
+.request-grocery-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #FDE8E3; /* Soft peach background color */
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+h2 {
+    text-align: center;
+    color: #BF574A; /* Darker peach for heading */
+    margin-bottom: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.8em;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #D67C5B; /* Muted peach for labels */
+    font-weight: bold;
+    font-family: 'Verdana', sans-serif;
+}
+
+input[type="text"], 
+input[type="number"], 
+select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #D67C5B; /* Border in muted peach */
+    border-radius: 6px;
+    background-color: #FFF5F2; /* Light peach background */
+    font-family: 'Verdana', sans-serif;
+    font-size: 1em;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, 
+input[type="number"]:focus, 
+select:focus {
+    border-color: #BF574A; /* Darker peach on focus */
+}
+
+input[type="file"] {
+    margin-top: 5px;
+}
+
+button {
+    background-color: #FF8A75; /* Vibrant peach for buttons */
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-family: 'Verdana', sans-serif;
+}
+
+button:hover {
+    background-color: #E0705C; /* Darker peach on hover */
+    transform: scale(1.07);
+}
+
+.error-message {
+    color: #E65A4A; /* Error message in dark peach */
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.grocery-items-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.grocery-item {
+    background-color: #FFF; /* White background for list items */
+    padding: 12px;
+    border: 1px solid #DDD;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.edit-button {
+    background-color: #FFB07F; /* Lighter peach for edit button */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.edit-button:hover {
+    background-color: #D98C67; /* Darker peach on hover */
+}
+
+.remove-button {
+    background-color: #FF6F5E; /* Bright peach for remove button */
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.remove-button:hover {
+    background-color: #C54E4B; /* Darker red-peach on hover */
+}
+
+.success-message {
+    margin-top: 20px;
+    padding: 15px 20px;
+    background-color: #F9EBE9; /* Soft peach background for success message */
+    color: #89c14a; /* Dark peach text */
+    border: 1px solid #E6A692; /* Peach border */
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    max-width: 350px;
+    margin: 20px auto;
+    animation: fadeIn 0.5s ease-in-out, slideIn 0.5s ease-in-out;
+}
+
+.success-message a {
+    color: #4fc74b; /* Dark peach for the link */
+    text-decoration: underline;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+    }
+
+    .image-section, .button-section {
+        width: 100%;
+    }
+}
